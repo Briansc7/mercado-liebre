@@ -1,0 +1,313 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: #ebebeb;
+}
+
+h2{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.main-header-top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    width: 200px;
+}
+
+.copy-header {
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+
+
+.search-bar { 
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    
+
+}
+
+
+.search-bar input{
+    width: 75%;
+}
+
+.mensaje-compra-cuotas {
+    text-align: center;  
+}
+
+.main-navbar{
+    display: none;
+}
+
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
+.hamburguer-button {
+    background-color: #1259c3;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.banner {
+    width: 100%;
+    margin: 0;
+}
+
+
+main {
+    margin: auto;
+    width: 90%;
+}
+
+main section {
+    margin:auto;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.products {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.products article {
+    margin-top: 10px;
+    background-color: white;
+    transition: all 1s;
+}
+
+.products article:hover {
+    box-shadow: 0px 0px 10px rgb(100 ,100 ,100);
+}
+
+.info-producto {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-producto i {
+    color: #39b54a;
+    display: block ;
+    font-size: 16px ;
+    padding: 5px ;
+    width: 30px ;
+    height: 30px ;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 1s;
+}
+
+.info-producto i:hover {
+    transform: rotateZ(-90deg);
+}
+
+.precio, .descuento{
+    margin: 0;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: 500;
+    width: 30%;
+    
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+    width: 70%;
+    font-weight: normal;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+
+.info-producto .description{
+    display: none;
+    transition: all 1s;
+}
+
+.info-producto:hover .description{
+    display: flex;
+}
+
+
+
+
+footer {
+    text-align: center;
+    margin: auto;
+}
+
+.titulo-footer {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer section{
+    text-align: center;
+    margin: auto;
+    width: 70%;
+    margin-bottom: 75px;
+}
+
+footer .copyright{
+    text-align: left;
+    margin-bottom: 0px;
+    margin-left: 30px;
+}
+
+.icono-footer {
+    color:#1259c3;
+    font-size: 40px;
+    margin-bottom: 5px;
+    transition: all 1s;
+}
+
+.icono-footer:hover {
+    color:red;
+}
+
+.boton-enviar:hover {
+    background-color: #0022AA;
+}
+
+
+
+@media (min-width: 361px){
+    .description {
+        display: block;
+    }
+
+    .products article {
+        box-shadow: 0px 0px 10px rgb(100 ,100 ,100);
+        width: 45%;
+    }
+
+    .main-navbar{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .left-navbar, .right-navbar {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main-navbar li {
+        margin: 8px;
+    }
+
+
+    .hamburguer-button{
+        display: none;
+    }
+
+    .precio, .descuento {
+        width: 50%;
+    }
+
+
+}
+
+@media (min-width: 769px){
+    .products article {
+        width: 20%;
+    }
+
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .search-bar {
+        width: auto;
+    }
+
+    .copy-header {
+        max-width: 350px;
+        text-align: right;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 90%;
+        
+    }
+
+    footer .footer-options{
+        width: 33%;
+        margin: 0 auto;
+    }
+}
+

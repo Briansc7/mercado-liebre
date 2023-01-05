@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    
+    
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+
+    <script type="module" src="/js/headerFooterLoader.js"></script>
+</head>
+<body>
+    <my-header></my-header>
+
+    <main>
+        <h2>Registro</h2>
+        <form action="/" method="post">
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>
+                <em class="error" id="nombre"></em>
+            </p>
+            <p>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" required>
+                <em class="error" id="apellido"></em>
+            </p>
+            <p>
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" name="username" id="username" required>
+                <em class="error" id="username"></em>
+            </p>
+            <p>
+                <label for="birthdate">Fecha de nacimiento:</label>
+                <input type="date" name="birthdate" id="birthdate" required>
+                <em class="error" id="birthdate"></em>
+            </p>
+            <p>
+                <label for="address">Domicilio:</label>
+                <input type="text" name="address" id="address" required>
+                <em class="error" id="address"></em>
+            </p>
+            <p>
+                <label>Perfil de usuario</label>
+                <br>
+                <input type="radio" name="comprar-o-vender" value="comprar" required>Comprador
+                <br>
+                <input type="radio" name="comprar-o-vender" value="vender">Vendedor
+            </p>
+            <p>
+                <label>Intereses</label>
+                <br>
+                <input type="checkbox" name="intereses" value="electro" multiple> Electro
+                <br>
+                <input type="checkbox" name="intereses" value="moda" multiple> Moda
+                <br>
+                <input type="checkbox" name="intereses" value="hogar" multiple> Hogar
+                <br>
+                <input type="checkbox" name="intereses" value="jugueteria" multiple> Juguetería
+                <br>
+                <input type="checkbox" name="intereses" value="vida-sana" multiple> Vida Sana        
+            </p>
+            <p>
+                <label>Foto de usuario:</label>
+                <input type="file" name="avatar" accept=".jpg" multiple>
+            </p>
+            <p>
+                <label>Contraseña:</label>
+                <input type="password" name="password" id="password" required>
+                <em class="error" id="password"></em>
+                <br>
+                <label>Confirmar contraseña:</label>
+                <input type="password" name="repeat-password" id="repeat-password" required>
+                <em class="error" id="repeat-password"></em>
+            </p>
+            <button type="submit" href="/">Enviar</button>
+            <br>
+            <button type="reset">Reiniciar</button>
+        </form>
+    </main>
+
+    <my-footer></my-footer>
+</body>
+</html>
