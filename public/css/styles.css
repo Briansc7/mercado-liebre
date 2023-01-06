@@ -77,10 +77,6 @@ header form .submit{
     justify-content: center;
 }
 
-/*
-.search-bar input{
-    width: 75%;
-}*/
 
 .mensaje-compra-cuotas {
     text-align: center;  
@@ -88,6 +84,7 @@ header form .submit{
 
 .main-navbar{
     display: none;
+    text-align: center;
 }
 
 
@@ -263,6 +260,12 @@ footer .copyright{
 
 .boton-enviar:hover {
     background-color: #0022AA;
+    color: white;
+}
+
+.boton-reiniciar:hover {
+    background-color: red;
+    color: white;
 }
 
 
@@ -270,6 +273,10 @@ footer .copyright{
 @media (min-width: 361px){
     .logo, .search-bar,  .copy-header{
         width: 30%;
+    }
+
+    .copy-header {
+        font-size: 0.7rem;
     }
 
     header form input {
@@ -287,8 +294,12 @@ footer .copyright{
 
     .main-navbar{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         
+    }
+
+    .main-navbar a{
+        font-size: 0.7rem;
     }
 
     .left-navbar, .right-navbar {
@@ -329,6 +340,11 @@ footer .copyright{
     .copy-header {
         max-width: 350px;
         text-align: right;
+        font-size: 1.5rem;
+    }
+
+    .main-navbar a{
+        font-size: 1.5rem;
     }
 
     footer {
