@@ -224,7 +224,7 @@ img {
 }
 
 
-main form{
+main form .register-initial-data, .register-pw, .register-buttons{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -242,7 +242,7 @@ main form button {
     color: white;
 }
 
-.main-login {
+.main-login, .main-register {
     max-width: 500px;
 }
 
@@ -341,6 +341,29 @@ main form button {
 .user-interest input[type=checkbox]{
     width: 20px;
     height: 20px;
+}
+
+.register-user-avatar{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.register-user-avatar h4, .register-user-avatar input{
+    width: 100%;
+}
+
+@media (min-width: 361px){
+    .register-buttons{
+        justify-content: space-between;
+    }
+
+    .register-buttons button{
+        width: calc(50% - 5px);
+    }
 }
 
 
