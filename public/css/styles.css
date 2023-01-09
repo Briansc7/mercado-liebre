@@ -130,6 +130,8 @@ a {
 main {
     margin: auto;
     width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 main section {
@@ -222,6 +224,18 @@ img {
 }
 
 
+main form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+main form input, main form button{
+    width: 100%;
+    border-radius: 5px;
+    height: 30px;
+}
 
 
 footer {
@@ -267,6 +281,7 @@ footer .copyright{
     background-color: red;
     color: white;
 }
+
 
 
 
