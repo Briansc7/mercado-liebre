@@ -224,7 +224,7 @@ img {
 }
 
 
-main form .register-initial-data, .register-pw, .register-buttons{
+main form .register-initial-data, .register-pw, .register-buttons, .main-login form{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
