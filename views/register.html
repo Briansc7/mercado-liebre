@@ -50,18 +50,22 @@
                     <label for="" class="vendedor-label">Vendedor</label>
                 </div>
                 
-            
-                <label>Intereses</label>
-                <br>
-                <input type="checkbox" name="intereses" value="electro" multiple> Electro
-                <br>
-                <input type="checkbox" name="intereses" value="moda" multiple> Moda
-                <br>
-                <input type="checkbox" name="intereses" value="hogar" multiple> Hogar
-                <br>
-                <input type="checkbox" name="intereses" value="jugueteria" multiple> Juguetería
-                <br>
-                <input type="checkbox" name="intereses" value="vida-sana" multiple> Vida Sana        
+                <div class="user-interest">
+                    <h4>Intereses</h4>
+                    <br>
+                    <input type="checkbox" name="intereses" value="electro" multiple class="electro-check">
+                    <label class="electro">Electro</label> 
+                    <input type="checkbox" name="intereses" value="moda" multiple class="moda-check">
+                    <label for="" class="moda">Moda</label> 
+                    <input type="checkbox" name="intereses" value="hogar" multiple class="hogar-check"> 
+                    <label for="" class="hogar">hogar</label>
+                    <input type="checkbox" name="intereses" value="jugueteria" multiple class="jugueteria-check"> 
+                    <label for="" class="jugueteria">Juguetería</label>
+                    <input type="checkbox" name="intereses" value="vida-sana" multiple class="vida-sana-check"> 
+                    <label for="" class="vida-sana">Vida Sana</label> 
+                </div>
+
+                      
             
                 <label>Foto de usuario:</label>
                 <input type="file" name="avatar" accept=".jpg" multiple>

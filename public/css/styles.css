@@ -283,9 +283,69 @@ main form button {
 }
 
 .radio-comprador, .radio-vendedor{
-    width: 35px;
-    height: 35px;
+    width: 20px;
+    height: 20px;
 }
+
+.user-interest {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+    "user-interest-title user-interest-title"
+    "electro-check electro"
+    "moda-check moda"
+    "hogar-check hogar"
+    "jugueteria-check jugueteria"
+    "vida-sana-check vida-sana";
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.user-interest h4{
+    grid-area: user-interest-title;
+}
+
+.electro-check{
+    grid-area: electro-check;
+}
+.electro{
+    grid-area: electro;
+}
+.moda-check{
+    grid-area: moda-check;
+}
+.moda{
+    grid-area: moda;
+}
+.hogar-check{
+    grid-area: hogar-check;
+}
+.hogar{
+    grid-area: hogar;
+}
+.jugueteria-check{
+    grid-area: jugueteria-check;
+}
+.jugueteria{
+    grid-area: jugueteria;
+}
+.vida-sana-check{
+    grid-area: vida-sana-check;
+}
+.vida-sana{
+    grid-area: vida-sana;
+}
+
+.user-interest input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
 
 
 
