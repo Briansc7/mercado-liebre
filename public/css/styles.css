@@ -237,9 +237,57 @@ main form input, main form button{
     height: 30px;
 }
 
+main form button {
+    background-color: #666;
+    color: white;
+}
+
 .main-login {
     max-width: 500px;
 }
+
+.main-register form h4{
+    width: 100%;
+}
+
+.user-profile-register {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto 1fr;
+    grid-template-areas:
+    "user-profile-title user-profile-title user-profile-title user-profile-title"
+    "radio-comprador comprador-label radio-vendedor vendedor-label";
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.user-profile-register h4{
+    grid-area: user-profile-title;
+}
+
+.radio-comprador {
+    grid-area: radio-comprador;
+}
+
+.radio-vendedor {
+    grid-area: radio-vendedor;
+}
+
+.comprador-label {
+    grid-area: comprador-label;
+}
+
+.vendedor-label {
+    grid-area: vendedor-label;
+}
+
+.radio-comprador, .radio-vendedor{
+    width: 35px;
+    height: 35px;
+}
+
+
 
 footer {
     text-align: center;

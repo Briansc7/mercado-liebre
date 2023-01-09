@@ -20,42 +20,37 @@
 <body>
     <my-header></my-header>
 
-    <main>
-        <h2>Registro</h2>
+    <main class="main-register">        
         <form action="/" method="post">
-            <p>
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre" required>
-                <em class="error" id="nombre"></em>
-            </p>
-            <p>
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" id="apellido" required>
-                <em class="error" id="apellido"></em>
-            </p>
-            <p>
-                <label for="username">Nombre de usuario:</label>
-                <input type="text" name="username" id="username" required>
+            <h2>Registro</h2>
+            
+                
+                <input type="text" name="nombre" id="nombre-apellido" required placeholder=" Nombre y Apellido">
+                <em class="error" id="nombre-apellido"></em>
+            
+                <input type="text" name="username" id="username" required placeholder=" Nombre de usuario">
                 <em class="error" id="username"></em>
-            </p>
-            <p>
-                <label for="birthdate">Fecha de nacimiento:</label>
+
+                <input type="email" name="email" id="email" required placeholder=" E-mail">
+                <em class="error" id="email"></em>
+            
+                <h4>Fecha de nacimiento</h4>
                 <input type="date" name="birthdate" id="birthdate" required>
                 <em class="error" id="birthdate"></em>
-            </p>
-            <p>
-                <label for="address">Domicilio:</label>
-                <input type="text" name="address" id="address" required>
+            
+                <input type="text" name="address" id="address" required placeholder=" Domicilio">
                 <em class="error" id="address"></em>
-            </p>
-            <p>
-                <label>Perfil de usuario</label>
-                <br>
-                <input type="radio" name="comprar-o-vender" value="comprar" required>Comprador
-                <br>
-                <input type="radio" name="comprar-o-vender" value="vender">Vendedor
-            </p>
-            <p>
+            
+                <div class="user-profile-register">
+                    <h4>Perfil de usuario</h4>
+                    <br>
+                    <input type="radio" class="radio-comprador" name="comprar-o-vender" value="comprar" required>
+                    <label class="comprador-label">Comprador</label>
+                    <input type="radio" class="radio-vendedor" name="comprar-o-vender" value="vender">
+                    <label for="" class="vendedor-label">Vendedor</label>
+                </div>
+                
+            
                 <label>Intereses</label>
                 <br>
                 <input type="checkbox" name="intereses" value="electro" multiple> Electro
@@ -67,12 +62,10 @@
                 <input type="checkbox" name="intereses" value="jugueteria" multiple> Juguetería
                 <br>
                 <input type="checkbox" name="intereses" value="vida-sana" multiple> Vida Sana        
-            </p>
-            <p>
+            
                 <label>Foto de usuario:</label>
                 <input type="file" name="avatar" accept=".jpg" multiple>
-            </p>
-            <p>
+            
                 <label>Contraseña:</label>
                 <input type="password" name="password" id="password" required>
                 <em class="error" id="password"></em>
@@ -80,9 +73,8 @@
                 <label>Confirmar contraseña:</label>
                 <input type="password" name="repeat-password" id="repeat-password" required>
                 <em class="error" id="repeat-password"></em>
-            </p>
+            
             <button type="submit" href="/" class="boton-enviar">Enviar</button>
-            <br>
             <button type="reset" class="boton-reiniciar">Reiniciar</button>
         </form>
     </main>
