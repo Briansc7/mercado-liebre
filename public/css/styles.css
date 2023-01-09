@@ -237,6 +237,9 @@ main form input, main form button{
     height: 30px;
 }
 
+.main-login {
+    max-width: 500px;
+}
 
 footer {
     text-align: center;
